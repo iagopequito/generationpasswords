@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        
+        <!-- Título e descrição -->
+        <header class="header">
+            <img src="imagem_2025-08-12_232630730-removebg-preview.svg" alt="Cadeado aberto">
+            <h1>Gerador de Senhas</h1>
+            <p>Crie instantaneamente uma senha aleatória e segura</p>
+        </header>
+
+        <!-- Campo da senha -->
+        <div class="senha-container">
+            <label for="senha">Senha:</label>
+            <input type="text" id="campo-senha" name="senha" readonly>
+        </div>
+
+        <!-- Configurações -->
+        <section class="config">
+            <h2>Personalizar senha</h2>
+
+            <!-- Número de caracteres -->
+            <div class="config-item">
+                <span>Número de caracteres</span>
+                <div class="contador">
+                    <button class="btn-ajuste">-</button>
+                    <span class="valor">12</span>
+                    <button class="btn-ajuste">+</button>
+                </div>
+            </div>
+
+            <!-- Características da senha -->
+            <div class="config-item">
+                <span>Tipos de caracteres</span>
+                <div class="opcao">
+                    <input type="checkbox" id="chk-maiusculo" checked>
+                    <label for="chk-maiusculo">Letras maiúsculas</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="chk-minusculo">
+                    <label for="chk-minusculo">Letras minúsculas</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="chk-numero">
+                    <label for="chk-numero">Números</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="chk-simbolo">
+                    <label for="chk-simbolo">Símbolos</label>
+                </div>
+            </div>
+
+            <!-- Força da senha -->
+            <div class="config-item">
+                <span>Força da senha</span>
+                <div class="barra-forca"></div>
+                <div class="forca-indicadores">
+                    <p>Fraca</p>
+                    <p>Média</p>
+                    <p>Forte</p>
+                </div>
+                <p class="entropia"></p>
+            </div>
+        </section>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
